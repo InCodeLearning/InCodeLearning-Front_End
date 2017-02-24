@@ -1,0 +1,15 @@
+<!Doctype html>
+<!-- add attribute for angular, ng-app is a directive running the module
+when the document loads. Treating the html inside this element as part of
+the angular app.-->
+<html ng-app="store">
+<!-- set ng-app="module-directive" also worked, js file name. but recommenedto use name matching module name. -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-3.3.6-dist/css/bootstrp.min.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="angular.1.5.7.min.js"></script>
+    <script type="text/javascript" src=module-directive.js"></script>
+    <p>{{"hello" + "you"}}</p>
+  </body>
+</html>

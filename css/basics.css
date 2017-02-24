@@ -1,0 +1,11 @@
+/* every browser has a default way (stylesheet) to present each tag.*/
+/* css classes */
+/* .a.b (same time) vs. .a .b (parent child) */
+.a.b{
+	background-color:red;
+}
+
+.a .b{
+	background-color:blue;
+}
+/* */
