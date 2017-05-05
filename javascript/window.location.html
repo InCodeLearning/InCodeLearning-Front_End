@@ -1,0 +1,23 @@
+<script>
+  // both prints url
+  document.write("location " + window.location + "<br/>");
+  document.write("location.href " + window.location.href + "<br/>");
+
+  document.write("hostname " + window.location.hostname + "<br/>");
+  document.write("pathname " + window.location.pathname + "<br/>");
+  // Most browsers will not display default port numbers (80 for http and 443 for https)
+  document.write("port " + window.location.port + "<br/>");
+
+  function newDoc() {
+    window.location.assign("document.write.html");
+  }
+
+  function myBlog() {
+    window.location.assign("http://jessezhuang.github.io");
+  }
+</script>
+
+<body>
+  <p><input type="button" value="Load new document" onclick="newDoc()"></p>
+  <p><input type="button" value="Load Jesse Blog" onclick="myBlog()"></p>
+</body>

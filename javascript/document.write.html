@@ -1,0 +1,23 @@
+<script> 
+  document.write("<h1>Hello World Title</h1>");
+  document.write("Hello World Jesse<br/>");
+
+  var name;
+  name = prompt("What is your name?");
+  // logs encoded html
+  console.log(name);
+  // try put in "&amp; &amps; &nbsp; test"
+  document.write(name);
+  // write decoded html
+  document.write("<h1>" + name + "</h1>");		    
+  var date = Date();
+  document.write(date + "<br/>");
+  document.write(document.baseURI+"<br>");
+  document.write(window.location);
+</script>
+
+document.write("Hello World Jesse");
+
+<!-- As a test, what happens if you remove the script tag up above? -->
+<!-- see above example, show up as normal text on page -->
+
