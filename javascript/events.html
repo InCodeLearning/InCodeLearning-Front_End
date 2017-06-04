@@ -15,14 +15,19 @@
   <button type="button" onclick="displayDate()">Display Date</button>
   <p id = "output"><p>
 
-  <script>
-    function message(msg)
-    {
-      document.getElementById('output').innerHTML = msg + " event";
-    }
-    function displayDate(){
-      document.getElementById("output").innerHTML=Date();
-    }
-  </script>
+    <script>
+        var output =document.getElementById('output');
+        function message(msg)
+        {
+            output.innerHTML = msg + " event";
+        }
+        function displayDate(){
+            output.innerHTML=Date();
+        }
+        output.addEventListener('click', function(){clicked(output)});
+        function clicked(element){
+            element.textContent = "this element was clicked.";
+        }
+    </script>
 </body>
 
